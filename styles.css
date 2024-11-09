@@ -1,0 +1,199 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+#home,
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 700px;  
+    border: 2 px solid black;
+}
+/* Navigation */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.section h1,
+.section h2 {
+    color: #333;
+}
+
+.section p {
+    margin-top: 1rem;
+    color: #666;
+}
+
+/* Skills Section */
+.skills-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill span {
+    width: 100px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #4CAF50;  
+}
+ 
+.skill:nth-child(1) .progress { background-color: #4CAF50; }
+.skill:nth-child(2) .progress { background-color: #2196F3; }
+.skill:nth-child(3) .progress { background-color: #FFC107; }
+.skill:nth-child(4) .progress { background-color: #9C27B0; }
+.skill:nth-child(5) .progress { background-color: #3B82F6; }
+.skill:nth-child(6) .progress { background-color: #00C49F; }
+
+
+/* Form Styling */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+ /* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline ;
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+}
+
+}
+
